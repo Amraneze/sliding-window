@@ -1,5 +1,5 @@
 {
-  "name": "sliding-window",
+  "name": "@amraneze/sliding-window",
   "version": "1.0.0",
   "description": "A NPM module that handle sliding window. You can use it if you have a certain time before processing a certain data",
   "main": "lib/index.js",
