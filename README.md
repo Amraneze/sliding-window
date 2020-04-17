@@ -3,6 +3,7 @@
 [![GitHub Release](https://img.shields.io/github/package-json/v/amraneze/sliding-window/master?style=flat-square)]()  
 [![GitHub Issues](https://img.shields.io/github/issues/amraneze/sliding-window?style=flat-square)]()
 [![codecov](https://codecov.io/gh/Amraneze/sliding-window/branch/master/graph/badge.svg)](https://codecov.io/gh/Amraneze/sliding-window)
+[![CircleCI](https://circleci.com/gh/Amraneze/sliding-window/tree/master.svg?style=svg)](https://circleci.com/gh/Amraneze/sliding-window/tree/master)
 
 Sliding Window is an npm module which does not process data while the queue is full.
 
