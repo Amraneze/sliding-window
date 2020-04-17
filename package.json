@@ -1,0 +1,56 @@
+{
+  "name": "sliding-window",
+  "version": "1.0.0",
+  "description": "A NPM module that handle sliding window. You can use it if you have a certain time before processing a certain data",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json --coverage",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A .",
+    "postversion": "git push && git push --tags",
+    "format": "prettier --write \"**/*.ts\" \"**/*.js\"",
+    "clean": "npm cache clear --force && npm clean-install",
+    "cover:test": "nyc npm run test",
+    "cover": "npm run test && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amraneze/sliding-window.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amraneze/sliding-window/issues"
+  },
+  "homepage": "https://github.com/Amraneze/sliding-window.git",
+  "keywords": [
+    "window sliding",
+    "window",
+    "sliding"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "author": "Amrane Ait Zeouay",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "codecov": "^3.6.5",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "ts-jest": "^25.4.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
+}
